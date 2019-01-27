@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 from time import sleep
 
 
-FILE_NAME = 'fit_green.txt'
-BOARD_URL = 'http://boards.4chan.org/fit/archive'
+FILE_NAME = 'green.txt'
+BOARD_URL = 'http://boards.4chan.org/r9k/archive'
 BASE_URL = 'http://boards.4chan.org/'
 MIN_LINES = 4
 
