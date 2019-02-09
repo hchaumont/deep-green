@@ -6,8 +6,8 @@ from time import sleep
 FILE_NAME = 'green.txt'
 BOARD_URL = 'http://boards.4chan.org/r9k/archive'
 BASE_URL = 'http://boards.4chan.org/'
-MIN_LINES = 4
-
+MIN_LINES = 4  # Ignore posts with fewer than this
+SLEEP_TIME = 1  # Time in seconds between requests
 
 def get_threads(board_url):
     r = get(board_url)
@@ -46,6 +46,6 @@ if __name__ == '__main__':
         traverse_thread(url)
         print(f'{current_count} of {thread_count}.')
         current_count += 1
-        sleep(1)
+        sleep(SLEEP_TIME)
 
     print("Success!")
